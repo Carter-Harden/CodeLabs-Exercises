@@ -1,0 +1,14 @@
+<h1>Order Dashboard</h1>
+<style>
+  .myDiv {
+    border: 500px;
+    color: green;
+    background-color: black;
+  }
+</style>
+
+<div class="myDiv">
+  <button type="button" (click)="onStart()">Start Work Day</button>
+  <button type="button" (click)="onStop()">End Work Day</button>
+  <p *ngFor="let item of allOrders">{{ item }}</p>
+</div>
